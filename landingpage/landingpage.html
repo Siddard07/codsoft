@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="landingpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <h1>IRON <i class="fa-solid fa-dumbbell fa-bounce"></i> <span>TEMPLE</span></h1>
+            </div>
+            <div class="content">
+                <ul class="opt">
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="bar" onclick="togglemenu()">
+                <p><i class="fa-solid fa-bars"></i></p>
+            </div>
+        </nav>
+    </header>
+    <section id="Home">
+        <h1>Want To Improve <br>Your Fitness</h1>
+        <p>You don’t have to be great to start, but you have to start to be great</p>
+    </section>
+    
+</body>
+<script>
+    let opt = document.querySelector(".opt");
+    function togglemenu() {
+        opt.classList.toggle('active')
+    }
+</script>
+</html>
